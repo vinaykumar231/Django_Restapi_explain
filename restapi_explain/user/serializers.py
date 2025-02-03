@@ -18,5 +18,5 @@ class RegisterSerializer(serializers.ModelSerializer):
         return super().create(validated_data)
 
 class LoginSerializer(serializers.Serializer):
-    email = serializers.EmailField()
-    password = serializers.CharField(write_only=True)
+    user_email = serializers.EmailField()
+    user_password = serializers.CharField(write_only=True)
